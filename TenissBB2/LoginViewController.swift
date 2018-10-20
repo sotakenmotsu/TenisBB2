@@ -98,8 +98,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         present(alert, animated: true, completion: nil)
     }
     
-     
-    
 
     /*
     // MARK: - Navigation

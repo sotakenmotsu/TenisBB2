@@ -2,42 +2,28 @@
 //  JoinViewController.swift
 //  TenissBB2
 //
-//  Created by 剱物蒼太 on 2018/09/21.
+//  Created by 剱物蒼太 on 2018/10/19.
 //  Copyright © 2018年 剱物蒼太. All rights reserved.
 //
 
 import UIKit
 
-//class JoinViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-//
-//    @IBOutlet var tableView: UITableView!
-//
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//
-//        tableView.delegate = self
-//        tableView.dataSource = self
-//
-//        // Do any additional setup after loading the view.
-//    }
+class JoinViewController: UIViewController {
+    
+    @IBOutlet var placeLabel: UILabel!
+    @IBOutlet var dateLabel: UILabel!
+    @IBOutlet var starttimeLabel: UILabel!
+    @IBOutlet var endtimeLabel: UILabel!
+    @IBOutlet var memberLabel: UILabel!
+    @IBOutlet var levelLabel: UILabel!
+    @IBOutlet var commentLabel: UILabel!
+    var post = [String]()
+        
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        print(post)
 
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        <#code#>
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        <#code#>
-//    }
-//
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        // Do any additional setup after loading the view.
     }
-    */
 
-//}
+}

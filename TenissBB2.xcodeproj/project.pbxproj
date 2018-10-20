@@ -13,7 +13,7 @@
 		C511564620EF706D007C05AE /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C511564520EF706D007C05AE /* SigninViewController.swift */; };
 		C525B71121303B4700C8DC8D /* blue-blurred-background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C525B71021303B4700C8DC8D /* blue-blurred-background.jpg */; };
 		C525B7132139551300C8DC8D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C525B7122139551300C8DC8D /* Post.swift */; };
-		C5336B13215505380099ADB7 /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5336B12215505380099ADB7 /* JoinViewController.swift */; };
+		C5B2A1992179F25900D7DDA5 /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B2A1982179F25900D7DDA5 /* JoinViewController.swift */; };
 		C5D6502B20E63117004DECD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D6502A20E63117004DECD6 /* AppDelegate.swift */; };
 		C5D6502D20E63117004DECD6 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D6502C20E63117004DECD6 /* SearchViewController.swift */; };
 		C5D6503020E63117004DECD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5D6502E20E63117004DECD6 /* Main.storyboard */; };
@@ -56,7 +56,7 @@
 		C511564520EF706D007C05AE /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		C525B71021303B4700C8DC8D /* blue-blurred-background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "blue-blurred-background.jpg"; path = "../../School_motsuken_Shirokane/TennisBB/barbuttonicon/icons/blue-blurred-background.jpg"; sourceTree = "<group>"; };
 		C525B7122139551300C8DC8D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		C5336B12215505380099ADB7 /* JoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
+		C5B2A1982179F25900D7DDA5 /* JoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
 		C5D6502720E63117004DECD6 /* TenissBB2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TenissBB2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5D6502A20E63117004DECD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5D6502C20E63117004DECD6 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -160,7 +160,7 @@
 				C511564320E87BB6007C05AE /* InviteContentsViewController.swift */,
 				C5D6502C20E63117004DECD6 /* SearchViewController.swift */,
 				C5D6505820E632AB004DECD6 /* SearchViewControllerTableViewCell.swift */,
-				C5336B12215505380099ADB7 /* JoinViewController.swift */,
+				C5B2A1982179F25900D7DDA5 /* JoinViewController.swift */,
 				C525B7122139551300C8DC8D /* Post.swift */,
 				C5D6503120E63118004DECD6 /* Assets.xcassets */,
 				C5D6503320E63118004DECD6 /* LaunchScreen.storyboard */,
@@ -409,7 +409,7 @@
 			files = (
 				C5D6505F20E64060004DECD6 /* LoginViewController.swift in Sources */,
 				C5D6502D20E63117004DECD6 /* SearchViewController.swift in Sources */,
-				C5336B13215505380099ADB7 /* JoinViewController.swift in Sources */,
+				C5B2A1992179F25900D7DDA5 /* JoinViewController.swift in Sources */,
 				C511564620EF706D007C05AE /* SigninViewController.swift in Sources */,
 				C511564420E87BB6007C05AE /* InviteContentsViewController.swift in Sources */,
 				C5D6502B20E63117004DECD6 /* AppDelegate.swift in Sources */,

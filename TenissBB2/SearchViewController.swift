@@ -17,6 +17,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     let user = Auth.auth().currentUser
     let dateformatter = DateFormatter()
     var posts = [[String]]()
+    var selectedpost = [String]()
     
 
     override func viewDidLoad() {
@@ -42,8 +43,6 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
                 self.tableView.reloadData()
             }
         } )
-        
-        
     }
 
    
@@ -67,6 +66,20 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
             returnvalue = self.posts.count
         }
         return returnvalue
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedpost = posts[indexPath.row]
+        if selectedpost != nil {
+            performSegue(withIdentifier: "toJoinViewController", sender: nil)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toJoinViewController" {
+            let JoinVC: JoinViewController = segue.destination as! JoinViewController
+            JoinVC.post = selectedpost
+        }
     }
 
 
