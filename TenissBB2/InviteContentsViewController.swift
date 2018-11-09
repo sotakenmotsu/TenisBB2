@@ -7,8 +7,7 @@
 //
 
 import UIKit
-import Firebase
-import FirebaseDatabase
+
 
 class InviteContentsViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextViewDelegate, UITextFieldDelegate {
 
@@ -29,9 +28,6 @@ class InviteContentsViewController: UIViewController, UIPickerViewDelegate, UIPi
     var endPickerView: UIPickerView = UIPickerView()
     var end: Int = 0
     
-    var ref: DatabaseReference!
-    let user = Auth.auth().currentUser
-    let now = Date()
     let dateformatter = DateFormatter()
 
     override func viewDidLoad() {
@@ -74,7 +70,6 @@ class InviteContentsViewController: UIViewController, UIPickerViewDelegate, UIPi
         self.endTimeTextField.inputAccessoryView = toolbar
         commentView.delegate = self
         
-        ref = Database.database().reference()
         dateformatter.dateFormat = "yyyy-MM-dd"
     }
 
@@ -172,6 +167,13 @@ class InviteContentsViewController: UIViewController, UIPickerViewDelegate, UIPi
         self.present(alert, animated: true, completion: nil)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toPostViewController" {
+            let PostVC: PostViewController = segue.destination as! PostViewController
+            PostVC.post = sender as! [String]
+        }
+    }
+    
     @IBAction func postButton(_ sender: UIButton) {
         if placeTextField.text == "" || placeTextField.text == nil {
             self.showalert()
@@ -188,24 +190,16 @@ class InviteContentsViewController: UIViewController, UIPickerViewDelegate, UIPi
         }else if commentView.text == "" || commentView.text == nil {
             self.showalert()
         }else{
+            var post = [String]()
             let randomid = String(arc4random_uniform(1000))
-            let place = placeTextField.text
-            let date = dateTextField.text
-            let starttime = startTimeTextField.text
-            let endtime = endTimeTextField.text
-            let member = memberTextField.text
-            let level = levelTextField.text
-            let comment = commentView.text
-            ref.child("data").child(randomid).setValue(["place":place,
-                                                         "date":date,
-                                                    "startTime":starttime,
-                                                      "endTime":endtime,
-                                                       "member":member,
-                                                        "level":level,
-                                                      "comment":comment,
-                                                     "postdate":dateformatter.string(from: now)])
+            post.append(placeTextField.text!)
+            post.append(dateTextField.text!)
+            post.append(startTimeTextField.text!)
+            post.append(endTimeTextField.text!)
+            post.append(memberTextField.text!)
+            post.append(levelTextField.text!)
+            post.append(commentView.text!)
+            self.performSegue(withIdentifier: "toPostViewController", sender: post)
         }
     }
-
 }
-

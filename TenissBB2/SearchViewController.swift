@@ -69,16 +69,13 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        selectedpost = posts[indexPath.row]
-        if selectedpost != nil {
-            performSegue(withIdentifier: "toJoinViewController", sender: nil)
-        }
+        performSegue(withIdentifier: "toJoinViewController", sender: posts[indexPath.row])
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toJoinViewController" {
             let JoinVC: JoinViewController = segue.destination as! JoinViewController
-            JoinVC.post = selectedpost
+            JoinVC.post = sender as! [String]
         }
     }
 

@@ -13,6 +13,7 @@
 		C511564620EF706D007C05AE /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C511564520EF706D007C05AE /* SigninViewController.swift */; };
 		C525B71121303B4700C8DC8D /* blue-blurred-background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C525B71021303B4700C8DC8D /* blue-blurred-background.jpg */; };
 		C525B7132139551300C8DC8D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C525B7122139551300C8DC8D /* Post.swift */; };
+		C58E0A1E218C56E200C119AF /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58E0A1D218C56E200C119AF /* PostViewController.swift */; };
 		C5B2A1992179F25900D7DDA5 /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B2A1982179F25900D7DDA5 /* JoinViewController.swift */; };
 		C5D6502B20E63117004DECD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D6502A20E63117004DECD6 /* AppDelegate.swift */; };
 		C5D6502D20E63117004DECD6 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D6502C20E63117004DECD6 /* SearchViewController.swift */; };
@@ -56,6 +57,7 @@
 		C511564520EF706D007C05AE /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		C525B71021303B4700C8DC8D /* blue-blurred-background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "blue-blurred-background.jpg"; path = "../../School_motsuken_Shirokane/TennisBB/barbuttonicon/icons/blue-blurred-background.jpg"; sourceTree = "<group>"; };
 		C525B7122139551300C8DC8D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		C58E0A1D218C56E200C119AF /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		C5B2A1982179F25900D7DDA5 /* JoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
 		C5D6502720E63117004DECD6 /* TenissBB2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TenissBB2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5D6502A20E63117004DECD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				C5D6505E20E64060004DECD6 /* LoginViewController.swift */,
 				C511564520EF706D007C05AE /* SigninViewController.swift */,
 				C511564320E87BB6007C05AE /* InviteContentsViewController.swift */,
+				C58E0A1D218C56E200C119AF /* PostViewController.swift */,
 				C5D6502C20E63117004DECD6 /* SearchViewController.swift */,
 				C5D6505820E632AB004DECD6 /* SearchViewControllerTableViewCell.swift */,
 				C5B2A1982179F25900D7DDA5 /* JoinViewController.swift */,
@@ -367,6 +370,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-TenissBB2/Pods-TenissBB2-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -374,6 +378,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -407,6 +412,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C58E0A1E218C56E200C119AF /* PostViewController.swift in Sources */,
 				C5D6505F20E64060004DECD6 /* LoginViewController.swift in Sources */,
 				C5D6502D20E63117004DECD6 /* SearchViewController.swift in Sources */,
 				C5B2A1992179F25900D7DDA5 /* JoinViewController.swift in Sources */,
